@@ -1,5 +1,5 @@
  {
-   "name": "Bayly Consulting",
+   "name": "ABC Company",
    "logo": "/assets/i/logo.png",
    "address": "6 Liberty Square",
    "address2": "Suite 100",
@@ -7,5 +7,5 @@
    "state": "MA",
    "zip": "02109",
    "phone": "800.917.3594",
-   "email": "info@baylyconsulting.com"
+   "email": "info@test.com"
  }

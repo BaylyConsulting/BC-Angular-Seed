@@ -1,4 +1,24 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<HEADER></HEADER>
-<router-outlet></router-outlet>
-<footer></footer>
+<header>
+    <mat-toolbar class="header">
+        <mat-toolbar-row>
+          <span class="fill-remaining-space"></span>
+          <span class="menu">
+          <button mat-button [matMenuTriggerFor]="menu">BC Sample App</button>
+          <mat-menu #menu="matMenu">
+              <button mat-menu-item [routerLink]="['./home/index']" routerLinkActive="active">Home</button>
+            <button mat-menu-item [routerLink]="['./home/contact']" routerLinkActive="active">Contact</button>
+            <button mat-menu-item [routerLink]="['./home/version']" routerLinkActive="active">Version</button>
+            <button mat-menu-item [routerLink]="['./home/httptest']" routerLinkActive="active">HTTP Test</button>
+          </mat-menu>
+        </span>
+        </mat-toolbar-row>
+      </mat-toolbar>
+</header>
+
+<main>
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+  Copyright None
+</footer>
